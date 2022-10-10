@@ -7,155 +7,306 @@
     <title>Document</title>
     <link href="explore.css" rel="stylesheet" />
     <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="wd-border-top">
-      <div class="wd-box-sizing">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-2">
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-home"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a class="list-group-item list-group-item-action" href="#list-home"
+              ><i class="fa-solid fa-house"></i
+              ><span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+              >
+                Home</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action active"
+              href="#list-profile"
+              ><i class="fa-solid fa-hashtag"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >Explore</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-messages"
+              ><i class="fa-solid fa-bell"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >Notifications</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-settings"
+              ><i class="fa-solid fa-envelope"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >Messages</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-settings"
+              ><i class="fa-solid fa-bookmark"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >Bookmarks</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-settings"
+              ><i class="fa-solid fa-list"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >Lists</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-settings"
+              ><i class="fa-solid fa-user"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >Profile</span
+              ></a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-settings"
+              ><i class="fa-solid fa-ellipsis"></i>
+              <span
+                class="d-lg-none d-md-none d-sm-none d-xs-none d-xxl-inline d-xl-inline"
+                >More</span
+              ></a
+            >
+          </div>
+
+          <div class="d-grid col-12 mx-auto pt-1">
+            <button type="button" class="btn btn-primary rounded-pill">
+              Tuit
+            </button>
+          </div>
+        </div>
+        <!-- Main Col -->
+        <div class="col-6 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+          <div class="row">
+            <div class="col-10">
+              <div class="input-group">
+                <span
+                  class="wd-rounded-bottom-left-1 wd-rounded-top-left-1 input-group-addon transparent border-start border-top border-bottom p-2"
+                  id="basic-addon1"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+
+                <input
+                  type="text"
+                  class="form-control border-start-0 wd-rounded-bottom-right-1 wd-rounded-top-right-1"
+                  placeholder="Search Tuiter"
+                />
+              </div>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-gear fa-xl align-middle mt-2"></i>
+            </div>
+          </div>
+          <!-- Tabs -->
+          <div class="mt-2">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >For You</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li
+                class="nav-item d-block d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block"
+              >
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li
+                class="nav-item d-block d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block"
+              >
+                <a class="nav-link" href="#">Entertainment</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Image -->
+          <div class="mt-2 position-relative">
+            <img class="w-100" src="../../images/CristianoRonaldo.jpeg" />
+            <h2
+              class="overlay-text position-absolute fixed-bottom margin-left-10 text-white"
+            >
+              Cristiano Ronaldo
+            </h2>
+          </div>
+          <!-- Row 1  -->
+          <div class="row border ms-1 me-1">
+            <div class="col-10 mt-2">
+              <span class="wd-suggested-post-color d-block"
+                >Web Development</span
+              >
+              <span
+                >ReactJS <i class="fa-sharp fa-solid fa-circle-check"></i
+              ></span>
+              <span class="wd-suggested-post-color">- 2h</span>
+              <p class="fw-bold">
+                React.js is a component based front end libary that makes it
+                very easy to build Single Page Applications or SPAs
+              </p>
+            </div>
+            <div class="col-2 mt-2">
+              <img
+                class="w-100"
+                src="../../images/communityIcon_4g1uo0kd87c61.png"
+              />
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="row border ms-1 me-1">
+            <div class="col-10 mt-2">
+              <span
+                >JavaScript <i class="fa-sharp fa-solid fa-circle-check"></i
+              ></span>
+              <span class="wd-suggested-post-color">- 2h</span>
+              <p class="fw-bold">
+                JavaScript is a programming language that can run on all
+                browsers as well as desktops
+              </p>
+              <span class="wd-suggested-post-color d-block">123K Tweets</span>
+            </div>
+            <div class="col-2 mt-2 mb-2">
+              <img
+                class="w-100"
+                src="../../images/Unofficial_JavaScript_logo_2.svg.png"
+              />
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="row border ms-1 me-1">
+            <div class="col-10 mt-2">
+              <span class="wd-suggested-post-color d-block"
+                >Web Development</span
+              >
+              <span class="fw-bold">jQuery</span>
+              <span class="wd-suggested-post-color d-block">123K Tweets</span>
+            </div>
+            <div class="col-2 mt-2 mb-2">
+              <img class="w-100" src="../../images/jquery-logo.png" />
+            </div>
+          </div>
+          <!-- Row 4 -->
+          <div class="row border ms-1 me-1">
+            <div class="col-10 mt-2">
+              <span class="wd-suggested-post-color d-block"
+                >Web Development</span
+              >
+              <span class="fw-bold">NodeJS</span>
+              <span class="wd-suggested-post-color d-block">123K Tweets</span>
+            </div>
+            <div class="col-2 mt-2 mb-2">
+              <img class="w-100" src="../../images/download.png" />
+            </div>
+          </div>
+        </div>
+        <!-- Who to follow -->
         <div
-          class="wd-box-sizing wd-grid-col-90-percent wb-border-left wd-border-left"
+          class="col-4 d-sm-none d-md-none d-xs-none d-xl-block d-lg-block d-xxl-block"
         >
-          <input
-            class="wd-background-color-dark wd-color-white wd-rounded-borders wd-full-width wd-margin-15"
-            placeholder="Search Tuiter"
-          />
-        </div>
-        <div class="wd-grid-col-10-percent wd-box-sizing wd-border-right">
-          <a
-            class="wd-margin-right-12 wd-margin-50"
-            href="./../explore-settings.html"
-            ><i class="icon-cogs"></i
-          ></a>
+          <div class="list-group">
+            <a class="list-group-item">Who to follow</a>
+            <a class="list-group-item" href="#list-profile">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    class="wd-width-40 wd-height-40 rounded-circle"
+                    src="../../images/java.png"
+                  />
+                </div>
+                <div class="col-7">
+                  <span
+                    >Java <i class="fa-sharp fa-solid fa-circle-check"></i
+                  ></span>
+                  <span class="wd-suggested-post-color d-block">@Java</span>
+                </div>
+                <div class="col-3">
+                  <button type="button" class="btn btn-primary rounded-pill">
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    class="wd-width-40 wd-height-40 rounded-circle"
+                    src="../../images/relativity_space.webp"
+                  />
+                </div>
+                <div class="col-7">
+                  <span
+                    >Relativity Space
+                    <i class="fa-sharp fa-solid fa-circle-check"></i
+                  ></span>
+                  <span class="wd-suggested-post-color d-block"
+                    >@relativityspace</span
+                  >
+                </div>
+                <div class="col-3">
+                  <button type="button" class="btn btn-primary rounded-pill">
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="list-group-item">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    class="wd-width-40 wd-height-40 rounded-circle"
+                    src="../../images/virgin galatic.webp"
+                  />
+                </div>
+                <div class="col-7">
+                  <span
+                    >Virgin Galatic
+                    <i class="fa-sharp fa-solid fa-circle-check"></i
+                  ></span>
+                  <span class="wd-suggested-post-color d-block"
+                    >@virgingalatic</span
+                  >
+                </div>
+                <div class="col-3">
+                  <button type="button" class="btn btn-primary rounded-pill">
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-
-      <div>
-        <ul class="wd-tabs">
-          <li>
-            <a
-              class="wd-selected wd-grid-col-one-fifth-page wd-text-color-blue wd-font-size-15 wd-padding-16 wd-box-sizing wd-border-left"
-              >For you</a
-            >
-          </li>
-          <li>
-            <a
-              class="wd-grid-col-one-fifth-page wd-text-color-gray wd-font-size-15 wd-padding-16 wd-box-sizing"
-              >Trending</a
-            >
-          </li>
-          <li>
-            <a
-              class="wd-grid-col-one-fifth-page wd-text-color-gray wd-font-size-15 wd-padding-16 wd-box-sizing"
-              >COVID-19</a
-            >
-          </li>
-          <li>
-            <a
-              class="wd-grid-col-one-fifth-page wd-text-color-gray wd-font-size-15 wd-padding-16 wd-box-sizing"
-              >News</a
-            >
-          </li>
-          <li>
-            <a
-              class="wd-grid-col-one-fifth-page wd-text-color-gray wd-font-size-15 wd-padding-16 wd-box-sizing wd-border-right"
-              >Entertainment</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div
-      class="wd-suggested-posts wd-clear-both wd-border-left wd-border-right wd-border-top wd-border-bottom"
-    >
-      <span class="wd-margin-left-12 wd-font-size-13 wd-suggested-post-color"
-        >Sports * Trending</span
-      >
-      <h4 class="wd-margin-left-12">Joe Rogan</h4>
-      <span class="wd-margin-left-12 wd-font-size-13 wd-suggested-post-color"
-        >5,2500 Tweets</span
-      >
-    </div>
-    <div
-      class="wd-suggested-posts wd-clear-both wd-border-left wd-border-right wd-border-bottom"
-    >
-      <span class="wd-margin-left-12 wd-font-size-13 wd-suggested-post-color"
-        >Trending in Science</span
-      >
-      <h4 class="wd-margin-left-12">Starships</h4>
-      <span class="wd-margin-left-12 wd-font-size-13 wd-suggested-post-color"
-        >55.5k Tweets</span
-      >
-    </div>
-
-    <!-- D -->
-    <div
-      class="wd-clear-both wd-border-left wd-border-right wd-margin-12 wd-border-bottom wd-height-120"
-    >
-      <span class="wd-margin-12 wd-margin-left-12">The New York Times</span
-      ><span class="wd-font-size-13 wd-suggested-post-color"> * Yesterday</span>
-      <img
-        class="wd-100x100 wd-float-right wd-border-radius-25 wd-margin-top-10 wd-margin-right-16"
-        src="../../images/CristianoRonaldo.jpeg"
-      />
-      <p class="wd-whitespace-nowrap wd-margin-left-12">
-        Cristiano Ronaldo gets three points for Manchester United tonight.
-      </p>
-    </div>
-    <!-- E -->
-    <div class="wd-border-left wd-border-right wd-border-bottom wd-height-120">
-      <span class="wd-margin-left-12 wd-suggested-post-color"
-        >COVID-19 * LIVE</span
-      >
-      <img
-        class="wd-100x100 wd-float-right wd-border-radius-25 wd-margin-top-10 wd-margin-right-16"
-        src="../../images/covid.jpg"
-      />
-      <p class="wd-margin-left-12">
-        COVID-19: News and updates for Massachussetts
-      </p>
-    </div>
-    <!-- E -->
-    <div class="wd-border-left wd-border-right wd-border-bottom wd-height-120">
-      <span class="wd-suggested-post-color wd-margin-left-12"
-        >STOCKS * LIVE</span
-      >
-      <img
-        class="wd-100x100 wd-float-right wd-border-radius-25 wd-margin-top-10 wd-margin-right-16"
-        src="../../images/download.jpg"
-      />
-      <p class="wd-margin-left-12">
-        Stocks: News and updates for Massachussetts
-      </p>
-    </div>
-    <!-- D -->
-    <div
-      class="wd-clear-both wd-border-left wd-border-right wd-margin-12 wd-border-bottom wd-height-120"
-    >
-      <span class="wd-margin-12 wd-margin-left-12">Bloomberg Opinion</span
-      ><span class="wd-font-size-13 wd-suggested-post-color"> * Yesterday</span>
-      <img
-        class="wd-100x100 wd-float-right wd-border-radius-25 wd-margin-top-10 wd-margin-right-16"
-        src="../../images/download-1.jpg"
-      />
-      <p class="wd-whitespace-nowrap wd-margin-left-12">
-        Would you take the vaccine for COVID?
-      </p>
-    </div>
-
-    <!-- C -->
-    <div
-      class="wd-suggested-posts wd-clear-both wd-border-left wd-border-right wd-border-bottom"
-    >
-      <span class="wd-margin-left-12 wd-font-size-13 wd-suggested-post-color"
-        >Trending in TV</span
-      >
-      <h4 class="wd-margin-left-12">Keeping Up with the Kardashians</h4>
-      <span class="wd-margin-left-12 wd-font-size-13 wd-suggested-post-color"
-        >100.5k Tweets</span
-      >
     </div>
   </body>
 </html>
