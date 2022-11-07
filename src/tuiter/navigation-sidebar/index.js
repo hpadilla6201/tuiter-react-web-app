@@ -1,22 +1,24 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis } from '@fortawesome/free-solid-svg-icons'
+import { Link, useLocation } from "react-router-dom";
+
 const NavigationSidebar = (
-    {
-      active = 'explore'
-    }
    ) => {
+    let location = useLocation();
+    let active = location.pathname;
+    console.log(location);
     return (
     <div className="list-group">
-        <a className="list-group-item" href="./index.js">Tuiter</a>
-        <a className={`list-group-item ${active === 'home'?'active':''}`} href="./index.js">
+        <Link to="/tuiter" className="list-group-item" href="./index.js">Tuiter</Link>
+        <Link to="/home" className={`list-group-item ${active === '/home'?'active':''}`}>
             <FontAwesomeIcon icon={faHome} />
             <span> Home</span>
-        </a>
-        <a className={`list-group-item ${active === 'explore'?'active':''}`} href="./index.js">
+        </Link>
+        <Link to="/tuiter" className={`list-group-item ${active === '/tuiter'?'active':''}`}>
             <FontAwesomeIcon icon={faHashtag} />
             <span> Explore</span>
-        </a>
+        </Link>
         <a className={`list-group-item ${active === 'notifications'?'active':''}`} href="./index.js">
             <FontAwesomeIcon icon={faBell} />
             <span> Notifications</span>
