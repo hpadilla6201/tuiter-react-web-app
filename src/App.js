@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Tuiter from "./tuiter/index.js";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
+import Home from "./tuiter/home/index.js";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,8 @@ function App() {
                  element={<HelloWorld/>}/>
           <Route path="/tuiter"
                  element={<Tuiter/>}/>
+          <Route path="/home"
+                 element={<Home />}/>
         </Routes>
       </div>
     </BrowserRouter>
