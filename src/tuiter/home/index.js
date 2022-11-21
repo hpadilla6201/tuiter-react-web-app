@@ -9,26 +9,24 @@ import { configureStore }
 import {Provider} from "react-redux";
 import WhatsHappening from "./whats-happening";
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer}});
+  {reducer: {who: whoReducer, tuitsState: tuitsReducer}});
 const Home = () => {
  return(
     <Provider store={store}>
-    <div className="container">
-        <div className="row">
-            <div className="col-3">
+        <div className="row mt-2">
+            <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                 <NavigationSidebar />
             </div>
-            <div className="col-6">
+            <div className="col-10 col-md-10 col-lg-7 col-xl-6">
                 <h1>Home</h1>
                 <WhatsHappening />
                 <TuitsList />
             </div>
-            <div className="col-3">
+            <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 
                 <WhoToFollowList /> 
             </div>
         </div>
-     </div>
     </Provider>
  );
 };

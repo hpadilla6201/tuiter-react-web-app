@@ -4,9 +4,9 @@ const TodoList = () => {
    return(`
       <ul>
          ${
-            todos.map(todo => {
-               return(TodoItem(todo));
-            }).join('')
+            todos.map(todo => 
+               <TodoItem todo={todo} index={index} />
+            ).join('')
          }
       </ul>
    `);

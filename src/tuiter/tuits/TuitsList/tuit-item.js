@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck} from '@fortawesome/free-solid-svg-icons'
 import TuitStats from "../TuitStats";
 import {useDispatch} from "react-redux";
-import { deleteTuit } from "../../reducers/tuits-reducer";
+// import { deleteTuit } from "../../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../../services/tuits-thunks";
 
 const TuitItem = (
  {
@@ -12,13 +13,14 @@ const TuitItem = (
 ) => {
 const dispatch = useDispatch();
 const deleteTuitHandler = (id) => {
-  dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
 }
 
  return(
     <div className="list-group-item">
         <div className="row ">
             <div className="col-2">
+                
                 <img width={70} className="float-start rounded-3" src={`/images/${tuit.image}`} alt=""/>
             </div>
             <div className="col-10">

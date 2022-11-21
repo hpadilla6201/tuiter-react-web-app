@@ -1,6 +1,6 @@
-const TodoItem = (todo) => {
+const TodoItem = ({todo, index}) => {
     return(`
-      <li>
+      <li key={index}>
         <input type="checkbox"
           ${todo.done ? 'checked' : ''}/>
         ${todo.title}
