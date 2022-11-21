@@ -20,6 +20,7 @@ const deleteTuitHandler = (id) => {
     <div className="list-group-item">
         <div className="row ">
             <div className="col-2">
+                
                 <img width={70} className="float-start rounded-3" src={`/images/${tuit.image}`} alt=""/>
             </div>
             <div className="col-10">
