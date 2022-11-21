@@ -9,7 +9,7 @@ import { configureStore }
 import {Provider} from "react-redux";
 import WhatsHappening from "./whats-happening";
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer}});
+  {reducer: {who: whoReducer, tuitsState: tuitsReducer}});
 const Home = () => {
  return(
     <Provider store={store}>

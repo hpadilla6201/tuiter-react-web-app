@@ -7,7 +7,6 @@ const NavigationSidebar = (
    ) => {
     let location = useLocation();
     let active = location.pathname;
-    console.log(location);
     return (
     <div className="list-group">
         <Link to="/tuiter" className="list-group-item" href="./index.js">Tuiter</Link>
