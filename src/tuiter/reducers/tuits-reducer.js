@@ -4,7 +4,7 @@ import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk}  from
 
 const currentUser = {
     "userName": "NASA",
-    "handle": "@nasa",
+    "handle": "nasa",
     "image": "nasaLogo.png",
    };
    
@@ -16,6 +16,7 @@ const currentUser = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "disliked": 0,
    }
 
 const initialState = {

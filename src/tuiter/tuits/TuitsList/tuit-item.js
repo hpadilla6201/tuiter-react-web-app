@@ -27,7 +27,7 @@ const deleteTuitHandler = (id) => {
                 <div className="row">
                     <div>
                         {tuit.userName} <FontAwesomeIcon icon={faCheck} /> 
-                        <span> {tuit.handle}</span>
+                        <span> @{tuit.handle}</span>
                         <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i> 
                     </div>
                     
