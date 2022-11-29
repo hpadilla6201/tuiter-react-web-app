@@ -17,7 +17,6 @@ export const createTuitThunk = createAsyncThunk(
   'tuits/createTuit',
   async (thunkAPI) => {
     const response = await service.createTuit(thunkAPI)
-    console.log(response)
     return response
   }
 )
